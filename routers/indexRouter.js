@@ -1,4 +1,4 @@
-const { Router, text } = require("express");
+const { Router } = require("express");
 const indexRouter = Router();
 
 const messages = [
