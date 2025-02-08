@@ -2,8 +2,12 @@
     <body>
         <ul>
             <% messages.forEach((message) => { %>
-                <%- include('message', {user: message.user, message: message.text, time: message.added}); %>
+                <%- 
+                    include('message', 
+                    {id: message.id, user: message.user,
+                    message: message.text, time: message.added}); %>
             <% }); %> 
+            <a href="/new">Create New Message</a>
         </ul>
     </body>
 </html>
