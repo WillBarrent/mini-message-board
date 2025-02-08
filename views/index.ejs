@@ -1,0 +1,9 @@
+<html>
+    <body>
+        <ul>
+            <% messages.forEach((message) => { %>
+                <%- include('message', {user: message.user, message: message.text, time: message.added}); %>
+            <% }); %> 
+        </ul>
+    </body>
+</html>
